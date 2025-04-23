@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+
+/* main container */
+.container {
+    height: 100%;
+    width: 100%;
+    overflow-x: none;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+/* header section */
+.navContainer {
+    padding: 15px;
+    width: 100vw;
+    background-color: #000000;
+    background: linear-gradient(90deg,rgb(45, 40, 40),rgb(17, 1, 21), #011121, #1f0f01);
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 2px solid #FF5200;
+
+}
+
+nav {
+    overflow-x: none;
+    width: 100%;
+    padding-right: 2rem;
+}
+
+#navList {
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navLogo {
+    font-size: 2.8rem;
+    font-family: "Emblema One", system-ui;
+    font-weight: 200;
+    font-style: normal; 
+    color: #FF5200;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+}
+
+#navItems {
+    display: flex;
+    gap: 55px;
+    font-size: 25px;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;    
+}
+
+.clr span{
+    background: linear-gradient(90deg,  #FF5200,  #ff4400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.419);  
+    opacity: 0.9;
+}
+
+.clr i{
+    opacity: 0.51;
+    font-size: 1.2rem;
+}
+
+#fav {
+    opacity: 1;
+    background: linear-gradient(90deg, #dc3232, #920e0e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.419);  
+    color: red;
+}
+
+
+/* footer section  */
+.footerBox {
+    width: 100%;
+    background-color: #000000;
+    background: linear-gradient(90deg,rgb(45, 40, 40),rgb(27, 2, 34), #02182f, #2d1702);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+}
+
+.footerBox p {
+    color: white;
+    font-size: 1rem;
+    font-family: "Caveat", cursive;
+    letter-spacing: 0.1rem;
+    color: #FF5200;
+}
+
+
+/* --------------main content start here----------------*/
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.contentBox {
+    width: 50%;
+    margin: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    color: white;
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightBox {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 20px;
+}
+
+.rightBox img {
+    height: 400px;
+    width: 250px;
+    border-radius: 20px;
+    transition: all 0.6s linear 0s;
+}
+
+.rightBox:hover {
+    transform: scale(1.1);
+
+}
+
+.leftBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftBox h2 {
+    font-size: 2rem;
+}
+
+.ingBox {
+    font-size: 1.3rem;
+}
+
+.recipeBox {
+    font-size: 1.1rem;
+}
+
+.rightBox .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(36, 34, 34, 0.713);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all .3s linear 0s;
+}
+
+.rightBox:hover .overlay{
+    opacity: 1;    
+}
+
+.rightBox .overlay span{
+    color: white;
+    font-size: 1.1rem;
+    font-family: "Caveat", cursive;
+
+}
+
+section li {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.leftBox h1 {
+    font-size: 50px;
+}
+
+section h2 {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    color: rgb(255, 170, 0);
+}
+
+section h1 {
+    color: #FF5200;
+    font-family: "Great Vibes", cursive;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* this is marketing line on every item */
+.hr {
+    width: 100%;
+    border-bottom: 2px solid red;
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-size: 1.3rem;
+    color: rgb(233, 207, 156);
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+}
+/* ---------------------main content ends here -------------------- */
+
+
+/* background image behind main content */
+.main-img-div {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+ 
+.main-bg-img {
+    width: 50%;
+    margin: auto;
+}
+
+
+/* left & right sides of main content (dishes images) */
+.aside1 {
+    width: 25%;
+    background-color: black;
+}
+
+.aside1 img {
+    height: 500px;
+    width: 100%;
+    opacity: 0.25 !important;
+    cursor: pointer;
+    background-color: black;    
+}
+
+.upparImg, .lowerimg{
+    width: 100%;
+    display: flex;
+}
+
+.upparImg img, .lowerimg img {
+    width: 50%;
+    height: 250px;
+    border-radius: 5px;
+}

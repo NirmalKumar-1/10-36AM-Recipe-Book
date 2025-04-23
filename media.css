@@ -1,0 +1,145 @@
+@media (max-width: 1428px){
+    #navList li{
+        display: block;
+    } 
+
+    #navList {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        justify-content: space-evenly;
+    }
+
+    .contentBox {
+        width: 100%;
+        margin: auto;
+    }
+
+    main {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .aside1 {
+        display: none;
+    }
+
+    .main-bg-img {
+        width: 100%;
+    }      
+}
+
+@media (max-width: 930px){
+    #navItems span{
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .item {
+        flex-direction: column;
+    }
+
+    .rightBox img {
+        height: 200px;
+        width: 400px;
+        margin-top: 20px;
+    }
+
+    #navItems span {
+        font-size: 14px;
+    }
+
+    #navItems i {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 641px){ 
+    #navLogo {
+        font-size: 30px;
+    }
+
+    .pop {
+        display: none;
+    }
+
+    #navItems span {
+        font-size: 16px;
+    }
+
+    .footerBox p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 542px){
+    .newRec {
+        display: none;
+    }
+
+    #navItems span {
+        font-size: 12px;
+        gap: 15px;
+    }
+
+    #navItems i {
+        font-size: 0.5rem;
+    }
+
+    .footerBox span {
+        display: block;
+    }
+
+    .footerBox p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navContainer {
+        height: 50px;
+    }
+}
+
+@media (max-width: 385px){
+    .leftBox h1 {
+        font-size: 35px;
+    }
+
+    .leftBox h2 {
+        font-size: 20px;
+    }
+
+    .rightBox img {
+        height: 160px;
+        width: 335px;
+        margin-top: 20px;
+    }
+
+    .hr {
+        font-size: 15px;
+    }
+
+    .footerBox p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 333px){
+    #navLogo {
+        font-size: 23px;
+    }
+
+    .about {
+        display: none;
+    }
+
+    .rightBox img {
+        height: 130px;
+        width: 275px;
+        margin-top: 20px;
+    }
+}
